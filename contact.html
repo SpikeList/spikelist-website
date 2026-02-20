@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact SpikeList — Request a demo, talk to our sales team, or reach us at info@spikelist.com. Based in Pune, India.">
+  <meta name="description" content="Contact SpikeList — Request a demo, talk to sales, or reach our team at info@spikelist.com. Based in Pune, India.">
   <title>Contact — SpikeList</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF0606'/><text x='16' y='22' text-anchor='middle' font-size='18' font-weight='700' fill='white' font-family='system-ui'>S</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FF0606'/><path d='M7 16h18M16 7l9 9-9 9' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 </head>
 <body>
 
-<!-- ── NAV ── -->
-<nav class="nav stuck" id="mainNav">
+<!-- NAV -->
+<nav class="nav scrolled" id="nav">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
-      <div class="logo-icon">
-        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h12M9 3l6 6-6 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <span class="logo-wordmark">Spike<span>List</span></span>
+      <div class="logo-mark"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2l6 6-6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <span>SpikeList</span>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -26,81 +24,92 @@
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
     <div class="nav-actions">
-      <a href="contact.html#demo" class="btn btn-red">Request Demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#demo" class="btn btn-red" style="padding:10px 18px;font-size:11px">Request Demo →</a>
     </div>
-    <button class="hamburger" aria-label="Open menu">☰</button>
+    <button class="hamburger" aria-label="Open navigation">☰</button>
   </div>
 </nav>
-<div class="mobile-drawer">
+<div class="mob-drawer">
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="features.html">Features</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a href="#demo" class="btn btn-red btn-lg">Request Demo</a>
+  <a href="#demo" class="btn btn-red">Request Demo →</a>
 </div>
 
-<!-- ── PAGE HERO ── -->
+<!-- PAGE HERO -->
 <section class="page-hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="hero-glow-1" style="top:-160px;opacity:.5" aria-hidden="true"></div>
   <div class="container">
-    <div class="page-hero-content reveal">
-      <p class="overline">Get In Touch</p>
-      <h1 class="display">Let's talk about<br>your <em>catalog.</em></h1>
-      <p class="body-lg">Whether you're evaluating SpikeList, dealing with a specific operational challenge, or ready to start — our team responds within one business day.</p>
+    <div class="page-hero-inner reveal">
+      <span class="mono-label red">Get In Touch</span>
+      <h1 class="display-xl" style="margin-top:20px">Let's talk about<br>your <em>catalog.</em></h1>
+      <p class="body-lg" style="margin-top:24px">Whether you're evaluating SpikeList, working through a specific operational challenge, or ready to start — our team responds within one business day and will be honest about whether we're the right fit for your situation.</p>
     </div>
   </div>
 </section>
 
-<!-- ── CONTACT SECTION ── -->
-<section class="contact-section" id="demo">
+<!-- CONTACT SECTION -->
+<section class="contact-content" id="demo">
   <div class="container">
-    <div class="contact-layout">
+    <div class="contact-grid">
 
       <!-- Left: contact info -->
       <div class="reveal">
         <h2>Talk to the team.</h2>
-        <p class="body">We work with eCommerce businesses of all sizes — from growing distributors to enterprise retailers. We're honest about fit, and we'll tell you quickly if SpikeList isn't the right tool for your situation.</p>
+        <p class="body" style="margin-top:10px">We work with eCommerce businesses of all sizes — from growing distributors to multi-warehouse retailers. Tell us where you are and what's slowing you down.</p>
 
-        <div class="cd">
-          <div class="cd-icon red">✉️</div>
-          <div>
-            <div class="cd-lbl">Email</div>
-            <div class="cd-val"><a href="mailto:info@spikelist.com">info@spikelist.com</a></div>
+        <div style="margin:36px 0;display:flex;flex-direction:column;gap:0">
+          <div class="contact-detail">
+            <div class="cd-icon" aria-hidden="true">✉️</div>
+            <div>
+              <div class="cd-label">General Inquiries</div>
+              <div class="cd-value"><a href="mailto:info@spikelist.com">info@spikelist.com</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="cd-icon" aria-hidden="true">💼</div>
+            <div>
+              <div class="cd-label">Sales</div>
+              <div class="cd-value"><a href="mailto:sales@spikelist.com">sales@spikelist.com</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="cd-icon" aria-hidden="true">📍</div>
+            <div>
+              <div class="cd-label">Headquarters</div>
+              <div class="cd-value">Pune, Maharashtra, India</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="cd-icon" aria-hidden="true">🕐</div>
+            <div>
+              <div class="cd-label">Response Time</div>
+              <div class="cd-value">Within 1 business day</div>
+            </div>
           </div>
         </div>
-        <div class="cd">
-          <div class="cd-icon blue">🌐</div>
-          <div>
-            <div class="cd-lbl">Sales Inquiries</div>
-            <div class="cd-val"><a href="mailto:sales@spikelist.com">sales@spikelist.com</a></div>
-          </div>
-        </div>
-        <div class="cd">
-          <div class="cd-icon green">📍</div>
-          <div>
-            <div class="cd-lbl">Headquarters</div>
-            <div class="cd-val">Pune, Maharashtra, India</div>
+
+        <div style="background:var(--red-dim);border:1px solid rgba(255,6,6,0.15);border-radius:var(--r-lg);padding:24px;margin-bottom:20px">
+          <p style="font-family:var(--mono);font-size:10px;color:var(--red);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">What happens after you submit</p>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="display:flex;gap:10px;font-family:var(--mono);font-size:11px;color:var(--t-60)"><span style="color:var(--red)">01 →</span> We review your details and reach out within 1 business day</div>
+            <div style="display:flex;gap:10px;font-family:var(--mono);font-size:11px;color:var(--t-60)"><span style="color:var(--red)">02 →</span> 30-min discovery call to understand your catalog setup</div>
+            <div style="display:flex;gap:10px;font-family:var(--mono);font-size:11px;color:var(--t-60)"><span style="color:var(--red)">03 →</span> Personalized demo built around your supplier and channel mix</div>
           </div>
         </div>
 
-        <div style="margin-top:40px;padding:24px;background:var(--red-pale);border:1px solid var(--red-border);border-radius:var(--r-lg)">
-          <p style="font-size:14px;font-weight:700;color:var(--red);margin-bottom:8px">What happens after you submit?</p>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
-            <li style="font-size:13px;color:var(--muted);display:flex;gap:8px"><span>→</span> We'll review your details and reach out within 1 business day</li>
-            <li style="font-size:13px;color:var(--muted);display:flex;gap:8px"><span>→</span> A 30-min discovery call to understand your catalog setup</li>
-            <li style="font-size:13px;color:var(--muted);display:flex;gap:8px"><span>→</span> A personalized demo built around your supplier and channel mix</li>
-          </ul>
-        </div>
-
-        <div style="margin-top:24px;padding:20px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r-lg)">
-          <p style="font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px">Good fit for SpikeList:</p>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:6px">
-            <li class="body-sm" style="display:flex;gap:7px"><span style="color:var(--red);font-weight:700">✓</span> 5,000+ SKUs across multiple vendors</li>
-            <li class="body-sm" style="display:flex;gap:7px"><span style="color:var(--red);font-weight:700">✓</span> Selling on 2+ marketplaces or storefronts</li>
-            <li class="body-sm" style="display:flex;gap:7px"><span style="color:var(--red);font-weight:700">✓</span> Manual catalog ops creating operational bottlenecks</li>
-            <li class="body-sm" style="display:flex;gap:7px"><span style="color:var(--red);font-weight:700">✓</span> eCommerce reseller, distributor, or multi-vendor retailer</li>
-          </ul>
+        <div style="background:var(--bg-4);border:1px solid var(--line-2);border-radius:var(--r-lg);padding:24px">
+          <p style="font-family:var(--mono);font-size:10px;color:var(--t-40);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">Good fit for SpikeList</p>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;gap:9px;font-family:var(--sans);font-size:13px;color:var(--t-60)"><span style="color:var(--red);font-family:var(--mono)">✓</span> 5,000+ SKUs across multiple vendors</div>
+            <div style="display:flex;gap:9px;font-family:var(--sans);font-size:13px;color:var(--t-60)"><span style="color:var(--red);font-family:var(--mono)">✓</span> Selling on 2+ marketplaces or storefronts</div>
+            <div style="display:flex;gap:9px;font-family:var(--sans);font-size:13px;color:var(--t-60)"><span style="color:var(--red);font-family:var(--mono)">✓</span> Catalog operations creating an operational bottleneck</div>
+            <div style="display:flex;gap:9px;font-family:var(--sans);font-size:13px;color:var(--t-60)"><span style="color:var(--red);font-family:var(--mono)">✓</span> eCommerce reseller, distributor, or multi-vendor retailer</div>
+          </div>
         </div>
       </div>
 
@@ -118,14 +127,17 @@
               <input type="text" id="lname" name="lname" placeholder="Martinez" required autocomplete="family-name">
             </div>
           </div>
+
           <div class="form-group">
             <label for="email">Work Email</label>
             <input type="email" id="email" name="email" placeholder="alex@yourcompany.com" required autocomplete="email">
           </div>
+
           <div class="form-group">
             <label for="company">Company Name</label>
-            <input type="text" id="company" name="company" placeholder="Your Company" required autocomplete="organization">
+            <input type="text" id="company" name="company" placeholder="Acme Distribution Ltd." required autocomplete="organization">
           </div>
+
           <div class="form-row">
             <div class="form-group">
               <label for="role">Your Role</label>
@@ -135,7 +147,7 @@
                 <option>VP / Director of eCommerce</option>
                 <option>Operations Manager</option>
                 <option>Product Manager</option>
-                <option>Technical Lead</option>
+                <option>Technical Lead / Engineering</option>
                 <option>Other</option>
               </select>
             </div>
@@ -151,18 +163,21 @@
               </select>
             </div>
           </div>
+
           <div class="form-group">
-            <label for="channels">Which channels are you publishing to?</label>
-            <input type="text" id="channels" name="channels" placeholder="e.g. Amazon, Google Shopping, Shopify, eBay">
+            <label for="channels">Channels You're Publishing To</label>
+            <input type="text" id="channels" name="channels" placeholder="e.g. Amazon, Google Shopping, Shopify, eBay, Walmart">
           </div>
+
           <div class="form-group">
-            <label for="message">Tell us about your current setup</label>
-            <textarea id="message" name="message" placeholder="How do you currently manage your product catalog? What's the biggest operational challenge we can help solve?"></textarea>
+            <label for="message">Tell Us About Your Current Setup</label>
+            <textarea id="message" name="message" placeholder="How are you currently managing your product catalog? What's the biggest operational challenge we could help solve?"></textarea>
           </div>
-          <button type="submit" class="btn btn-red btn-lg" style="width:100%;justify-content:center">
-            Send Message <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+
+          <button type="submit" class="btn btn-red" style="width:100%;justify-content:center;font-size:12px;padding:14px">
+            SEND MESSAGE →
           </button>
-          <p class="form-notice">By submitting, you agree to receive a response from the SpikeList team. We don't share your information with third parties. This is a static demo form — in production it connects to our CRM.</p>
+          <p class="form-notice">By submitting, you agree to receive a response from the SpikeList team. We don't share your information with third parties. This form is for demo in production — connect your preferred CRM or form handler.</p>
         </form>
       </div>
 
@@ -170,55 +185,60 @@
   </div>
 </section>
 
-<!-- ── FAQ MINI ── -->
-<section style="padding:80px 0;background:var(--surface-2);border-top:1px solid var(--border)">
+<!-- FAQ -->
+<section style="padding:80px 0;background:var(--bg);border-top:1px solid var(--line)">
   <div class="container">
     <div style="max-width:720px;margin:0 auto">
-      <p class="overline reveal" style="text-align:center;margin-bottom:16px">Common Questions</p>
-      <h2 class="h-md reveal" style="text-align:center;margin-bottom:48px;color:var(--ink)">Before we talk</h2>
-      <div style="display:flex;flex-direction:column;gap:20px">
-        <div class="reveal" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:24px 28px">
-          <h4 style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:7px">Do you work with businesses outside India?</h4>
-          <p class="body-sm">Yes. While headquartered in Pune, our platform and team serve customers across North America, Europe, and Southeast Asia. All demos and onboarding are done remotely.</p>
+      <div class="section-head center reveal" style="margin-bottom:48px">
+        <span class="mono-label red">FAQ</span>
+        <h2 class="display-md">Before we talk</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="about-card reveal">
+          <h3 style="font-size:15px;margin-bottom:8px">Do you work with businesses outside India?</h3>
+          <p class="body" style="font-size:14px">Yes. While headquartered in Pune, our platform and team serve customers across North America, Europe, and Southeast Asia. All demos and onboarding are conducted remotely via video call.</p>
         </div>
-        <div class="reveal d1" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:24px 28px">
-          <h4 style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:7px">How long does it take to get started?</h4>
-          <p class="body-sm">Most customers are live within 2–4 weeks. The timeline depends primarily on how complex your supplier data is and how many channels you're connecting. We've onboarded businesses with 30+ suppliers in under three weeks.</p>
+        <div class="about-card reveal d1">
+          <h3 style="font-size:15px;margin-bottom:8px">How long does onboarding take?</h3>
+          <p class="body" style="font-size:14px">Most customers are live within 2–4 weeks. Timeline depends on supplier data complexity and the number of channels you're connecting. We've onboarded businesses with 30+ suppliers in under three weeks.</p>
         </div>
-        <div class="reveal d2" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:24px 28px">
-          <h4 style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:7px">What's the minimum catalog size to benefit from SpikeList?</h4>
-          <p class="body-sm">We generally see the strongest ROI for businesses managing 5,000 SKUs or more, particularly when those SKUs come from multiple vendors. Below that threshold, simpler tools may be a better fit — and we'll tell you that honestly on the discovery call.</p>
+        <div class="about-card reveal d2">
+          <h3 style="font-size:15px;margin-bottom:8px">What's the minimum catalog size to benefit?</h3>
+          <p class="body" style="font-size:14px">We generally see the strongest ROI for businesses managing 5,000+ SKUs from multiple vendors. Below that, simpler tools may be a better fit — and we'll tell you that honestly on the discovery call.</p>
         </div>
-        <div class="reveal d3" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:24px 28px">
-          <h4 style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:7px">Is there a self-serve option or trial?</h4>
-          <p class="body-sm">We're currently onboarding customers through a guided process to ensure your setup is optimized from day one. A self-serve product experience is on our roadmap. Reach out to discuss early access.</p>
+        <div class="about-card reveal d3">
+          <h3 style="font-size:15px;margin-bottom:8px">Is there a self-serve trial or free tier?</h3>
+          <p class="body" style="font-size:14px">We're currently onboarding customers through a guided process to ensure optimal configuration from day one. A self-serve experience is on our roadmap. Reach out to discuss early access.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="footer-logo-text">Spike<span>List</span></span>
+        <div class="footer-logo">
+          <div class="logo-mark"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2l6 6-6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          SpikeList
+        </div>
         <p class="body-sm">Catalog automation and product feed management for eCommerce businesses that operate at scale.</p>
       </div>
       <div class="footer-col">
         <h4>Platform</h4>
         <ul>
-          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html">All Features</a></li>
           <li><a href="features.html#catalog">Catalog Aggregation</a></li>
-          <li><a href="features.html#inventory">Inventory Sync</a></li>
           <li><a href="features.html#pricing">Price Automation</a></li>
+          <li><a href="features.html#workflow">Workflow Automation</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="about.html#mission">Mission</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -233,8 +253,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2024 SpikeList. All rights reserved.</span>
-      <div style="display:flex;gap:20px"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+      <span class="footer-copy">© 2024 SpikeList Technologies. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
     </div>
   </div>
 </footer>

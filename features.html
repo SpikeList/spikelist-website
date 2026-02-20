@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SpikeList Features — Catalog aggregation, inventory sync, marketplace feed automation, price automation, vendor integrations, and workflow automation.">
+  <meta name="description" content="SpikeList Features — Catalog aggregation, inventory sync, marketplace publishing, price automation, vendor integrations, and workflow automation for eCommerce.">
   <title>Features — SpikeList</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FF0606'/><path d='M7 16h18M16 7l9 9-9 9' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF0606'/><text x='16' y='22' text-anchor='middle' font-size='18' font-weight='700' fill='white' font-family='system-ui'>S</text></svg>">
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="nav scrolled" id="nav">
+<!-- ── NAV ── -->
+<nav class="nav stuck" id="mainNav">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">
-      <div class="logo-mark">
-        <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2l6 6-6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="logo-icon">
+        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h12M9 3l6 6-6 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <span>SpikeList</span>
+      <span class="logo-wordmark">Spike<span>List</span></span>
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -26,362 +26,329 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="nav-actions">
-      <a href="contact.html" class="btn btn-outline" style="padding:10px 18px;font-size:11px">Talk to Sales</a>
-      <a href="contact.html#demo" class="btn btn-red" style="padding:10px 18px;font-size:11px">Request Demo →</a>
+      <a href="contact.html" class="btn btn-ghost">Talk to Sales</a>
+      <a href="contact.html#demo" class="btn btn-red">Request Demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
-    <button class="hamburger" aria-label="Open navigation">☰</button>
+    <button class="hamburger" aria-label="Open menu">☰</button>
   </div>
 </nav>
-<div class="mob-drawer">
+<div class="mobile-drawer">
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="features.html">Features</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a href="contact.html#demo" class="btn btn-red">Request Demo →</a>
+  <a href="contact.html#demo" class="btn btn-red btn-lg">Request Demo</a>
 </div>
 
-<!-- PAGE HERO -->
+<!-- ── PAGE HERO ── -->
 <section class="page-hero">
-  <div class="grid-bg" aria-hidden="true"></div>
-  <div class="hero-glow-1" style="top:-160px;opacity:.6" aria-hidden="true"></div>
   <div class="container">
-    <div class="page-hero-inner reveal">
-      <span class="mono-label red">Platform Features</span>
-      <h1 class="display-xl" style="margin-top:20px">The complete<br>catalog <em>automation</em><br>engine.</h1>
-      <p class="body-lg" style="margin-top:24px">Every capability your eCommerce operation needs to run a connected, automated product catalog — from vendor ingestion to live marketplace listings. Built for scale, designed for operators.</p>
+    <div class="page-hero-content reveal">
+      <p class="overline">Platform Features</p>
+      <h1 class="display">The complete catalog <em>automation engine</em></h1>
+      <p class="body-lg">Every tool your eCommerce operation needs to run a connected, automated product catalog — from vendor ingestion to live marketplace listings.</p>
     </div>
   </div>
 </section>
 
-<!-- FEATURE BLOCKS -->
+<!-- ── FEATURE BLOCKS ── -->
 <div class="features-page">
   <div class="container">
 
     <!-- 1. Catalog Aggregation -->
-    <div class="feat-full-block" id="catalog">
-      <div class="reveal">
+    <div class="feat-block" id="catalog">
+      <div class="feat-content reveal">
         <span class="feat-num">01 — Catalog Aggregation Engine</span>
         <h2>One master catalog.<br><em>Every source, unified.</em></h2>
-        <p class="body">SpikeList ingests product data from any number of vendors — in any format — and normalizes it into a single clean master catalog. No duplicate SKUs, no conflicting attributes, no spreadsheet reconciliation sessions eating your team's day.</p>
-        <ul class="feat-list" style="margin-top:20px">
-          <li>Format-agnostic ingestion: CSV, XML, JSON, EDI (850/855/856), FTP, SFTP, REST API, webhooks</li>
+        <p class="body">SpikeList ingests product data from any number of vendors — in any format — and normalizes it into a single, clean master catalog. No more duplicate SKUs, conflicting attributes, or spreadsheet reconciliation.</p>
+        <ul class="check-list">
+          <li>Format-agnostic ingestion: CSV, XML, JSON, EDI (850/855/856), FTP/SFTP, REST API</li>
           <li>Automatic deduplication and smart SKU mapping across suppliers</li>
           <li>Field normalization against your custom attribute taxonomy</li>
-          <li>Data enrichment pipelines to fill gaps before publishing</li>
-          <li>Complete audit trail of every data change by source and timestamp</li>
+          <li>Data enrichment pipelines to fill gaps automatically before publishing</li>
+          <li>Complete audit trail of every data change, by source and timestamp</li>
           <li>Supplier self-service portal for direct catalog submissions</li>
-          <li>Data quality scoring and supplier SLA reporting</li>
         </ul>
       </div>
-      <div class="feat-full-viz reveal d2">
-        <div class="viz-head">Live Catalog Sources</div>
+      <div class="feat-viz reveal d2">
+        <div class="fv-title">Live Catalog Sources</div>
         <div class="source-bars">
-          <div class="src-item">
-            <div class="src-meta">
-              <span class="src-name">📦 Vendor A — Electronics</span>
-              <span class="src-count">18,412 SKUs</span>
-            </div>
-            <div class="src-bar"><div class="src-bar-fill r" data-width="88%" style="width:0%"></div></div>
+          <div class="sb-item">
+            <div class="sb-label"><span>📦 Vendor A — Electronics</span><span>18,412 SKUs</span></div>
+            <div class="bar-track"><div class="bar-fill red" style="width:88%"></div></div>
           </div>
-          <div class="src-item">
-            <div class="src-meta">
-              <span class="src-name">🏭 Supplier B — Apparel</span>
-              <span class="src-count">12,100 SKUs</span>
-            </div>
-            <div class="src-bar"><div class="src-bar-fill b" data-width="70%" style="width:0%"></div></div>
+          <div class="sb-item">
+            <div class="sb-label"><span>🏭 Supplier B — Apparel</span><span>12,100 SKUs</span></div>
+            <div class="bar-track"><div class="bar-fill blue" style="width:70%"></div></div>
           </div>
-          <div class="src-item">
-            <div class="src-meta">
-              <span class="src-name">🔧 Distributor C — Tools</span>
-              <span class="src-count">9,820 SKUs</span>
-            </div>
-            <div class="src-bar"><div class="src-bar-fill g" data-width="55%" style="width:0%"></div></div>
+          <div class="sb-item">
+            <div class="sb-label"><span>🔧 Distributor C — Tools</span><span>9,820 SKUs</span></div>
+            <div class="bar-track"><div class="bar-fill green" style="width:55%"></div></div>
           </div>
-          <div class="src-item">
-            <div class="src-meta">
-              <span class="src-name">🌐 API Partner D — Accessories</span>
-              <span class="src-count">6,250 SKUs</span>
-            </div>
-            <div class="src-bar"><div class="src-bar-fill a" data-width="38%" style="width:0%"></div></div>
+          <div class="sb-item">
+            <div class="sb-label"><span>🌐 API Partner D — Accessories</span><span>6,250 SKUs</span></div>
+            <div class="bar-track"><div class="bar-fill amber" style="width:38%"></div></div>
           </div>
         </div>
-        <div style="margin-top:24px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center">
-          <span class="mono-label">Master Catalog Total</span>
-          <span style="font-family:var(--mono);font-size:24px;font-weight:600;color:var(--t-100)">46,582 SKUs</span>
+        <div style="margin-top:20px;padding-top:18px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
+          <span class="body-sm">Master Catalog Total</span>
+          <span style="font-family:var(--font-sans);font-size:22px;font-weight:700;letter-spacing:-.04em;color:var(--ink)">46,582 SKUs</span>
         </div>
       </div>
     </div>
 
     <!-- 2. Inventory Sync -->
-    <div class="feat-full-block alt" id="inventory">
-      <div class="reveal d2">
+    <div class="feat-block flip" id="inventory">
+      <div class="feat-content reveal d2">
         <span class="feat-num">02 — Inventory Synchronization</span>
         <h2>Real-time stock sync<br>across <em>every channel.</em></h2>
-        <p class="body">When stock changes at the warehouse — or any fulfillment source — SpikeList propagates those updates to all connected sales channels within minutes. Oversells become structurally impossible.</p>
-        <ul class="feat-list" style="margin-top:20px">
+        <p class="body">When stock changes at the warehouse — or any fulfillment source — SpikeList propagates those updates to all connected sales channels within minutes. No more oversells, no more stale listings.</p>
+        <ul class="check-list">
           <li>Sub-5-minute sync intervals across all connected channels</li>
           <li>Threshold-based listing suppression to prevent overselling automatically</li>
-          <li>Multi-warehouse and 3PL inventory aggregation into one source of truth</li>
-          <li>Dropship inventory pooling from multiple fulfillment partners</li>
+          <li>Multi-warehouse and 3PL inventory aggregation into one view</li>
           <li>Low-stock alerts and automated restock request triggers</li>
-          <li>Historical inventory trend analysis and demand signal hooks</li>
+          <li>Dropship inventory pooling from multiple fulfillment partners</li>
+          <li>Historical trend reports and demand signal integration hooks</li>
         </ul>
       </div>
-      <div class="feat-full-viz reveal">
-        <div class="viz-head">Inventory Sources — Live Status</div>
-        <div class="inv-list">
+      <div class="feat-viz reveal">
+        <div class="fv-title">Inventory Sync Status</div>
+        <div class="inv-rows">
           <div class="inv-row">
             <span class="inv-icon">🏪</span>
             <span class="inv-name">Main Warehouse — Dallas</span>
-            <span class="inv-count">42,100</span>
-            <div class="inv-dot ok"></div>
+            <span class="inv-count" style="color:#16A34A;font-weight:700">42,100</span>
+            <div class="sdot live"></div>
           </div>
           <div class="inv-row">
             <span class="inv-icon">🏭</span>
             <span class="inv-name">3PL Partner — Chicago</span>
-            <span class="inv-count">18,540</span>
-            <div class="inv-dot ok"></div>
+            <span class="inv-count" style="color:#16A34A;font-weight:700">18,540</span>
+            <div class="sdot live"></div>
           </div>
           <div class="inv-row">
             <span class="inv-icon">🚢</span>
             <span class="inv-name">Dropship Partner — UK</span>
-            <span class="inv-count">9,210</span>
-            <div class="inv-dot sync"></div>
+            <span class="inv-count" style="color:var(--muted);font-weight:700">9,210</span>
+            <div class="sdot sync"></div>
           </div>
           <div class="inv-row">
             <span class="inv-icon">📦</span>
             <span class="inv-name">Amazon FBA — East US</span>
-            <span class="inv-count">7,840</span>
-            <div class="inv-dot ok"></div>
-          </div>
-          <div class="inv-row">
-            <span class="inv-icon">⚡</span>
-            <span class="inv-name">Same-Day Courier — Local</span>
-            <span class="inv-count">1,240</span>
-            <div class="inv-dot low"></div>
+            <span class="inv-count" style="color:#16A34A;font-weight:700">7,840</span>
+            <div class="sdot live"></div>
           </div>
         </div>
-        <div style="margin-top:14px;background:rgba(0,230,118,0.06);border:1px solid rgba(0,230,118,0.15);border-radius:var(--r);padding:10px 14px">
-          <span style="font-family:var(--mono);font-size:10px;color:var(--green);letter-spacing:.06em">✓ All sources synced · Last update 2 min ago · 0 oversell events today</span>
+        <div style="margin-top:16px;background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:11px 14px">
+          <span style="font-size:12px;color:#16A34A;font-weight:600">✓ All sources synced — Last updated 2 min ago — 0 oversell events today</span>
         </div>
       </div>
     </div>
 
     <!-- 3. Marketplace Feed Automation -->
-    <div class="feat-full-block" id="feeds">
-      <div class="reveal">
+    <div class="feat-block" id="feeds">
+      <div class="feat-content reveal">
         <span class="feat-num">03 — Marketplace Feed Automation</span>
         <h2>Publish to every platform.<br><em>Automatically optimized.</em></h2>
-        <p class="body">SpikeList generates platform-specific product feeds that meet each marketplace's exact requirements — handling title formatting, image specs, category taxonomy, and data validation without your team touching a single spreadsheet.</p>
-        <ul class="feat-list" style="margin-top:20px">
+        <p class="body">SpikeList generates platform-specific product feeds that meet each marketplace's exact requirements — handling title formatting, image specs, category taxonomy, and data validation automatically.</p>
+        <ul class="check-list">
           <li>Pre-built exporters for Amazon, Google Shopping, eBay, Walmart, Shopify, WooCommerce, BigCommerce</li>
           <li>Channel-specific title, description, and attribute formatting</li>
-          <li>Automatic image transformation to match size and format specs</li>
-          <li>Category taxonomy mapping with AI-assisted classification</li>
-          <li>Feed validation before publishing — catches errors before they cost you visibility</li>
+          <li>Automatic image transformation to match size and format requirements</li>
+          <li>Category taxonomy mapping with smart classification assistance</li>
+          <li>Feed validation before publishing — catches errors before they cost you sales</li>
           <li>Scheduled or event-triggered updates, as frequent as every 15 minutes</li>
         </ul>
       </div>
-      <div class="feat-full-viz reveal d2">
-        <div class="viz-head">Active Marketplace Connections</div>
+      <div class="feat-viz reveal d2">
+        <div class="fv-title">Active Marketplace Connections</div>
         <div class="mp-grid">
-          <div class="mp-tile">
+          <div class="mp-item">
             <div class="mp-icon">🛒</div>
             <div class="mp-name">Amazon</div>
-            <div class="mp-status">● LIVE</div>
+            <div class="mp-status">● Live</div>
           </div>
-          <div class="mp-tile">
+          <div class="mp-item">
             <div class="mp-icon">🔵</div>
             <div class="mp-name">Google</div>
-            <div class="mp-status">● LIVE</div>
+            <div class="mp-status">● Live</div>
           </div>
-          <div class="mp-tile">
+          <div class="mp-item">
             <div class="mp-icon">🟢</div>
             <div class="mp-name">eBay</div>
-            <div class="mp-status">● LIVE</div>
+            <div class="mp-status">● Live</div>
           </div>
-          <div class="mp-tile">
+          <div class="mp-item">
             <div class="mp-icon">🟡</div>
             <div class="mp-name">Walmart</div>
-            <div class="mp-status">● LIVE</div>
+            <div class="mp-status">● Live</div>
           </div>
-          <div class="mp-tile">
+          <div class="mp-item">
             <div class="mp-icon">🔴</div>
             <div class="mp-name">Shopify</div>
-            <div class="mp-status">● LIVE</div>
+            <div class="mp-status">● Live</div>
           </div>
-          <div class="mp-tile">
+          <div class="mp-item">
             <div class="mp-icon">🟣</div>
             <div class="mp-name">WooCommerce</div>
-            <div class="mp-status">● LIVE</div>
+            <div class="mp-status">● Live</div>
           </div>
-          <div class="mp-tile">
+          <div class="mp-item">
             <div class="mp-icon">🔷</div>
             <div class="mp-name">BigCommerce</div>
-            <div class="mp-status">● LIVE</div>
+            <div class="mp-status">● Live</div>
           </div>
-          <div class="mp-tile" style="border-style:dashed;border-color:var(--line)">
-            <div class="mp-icon">＋</div>
-            <div class="mp-name">Custom API</div>
-            <div class="mp-status" style="color:var(--t-40)">Available</div>
+          <div class="mp-item" style="border-style:dashed;background:var(--surface-3)">
+            <div class="mp-icon">+</div>
+            <div class="mp-name">Custom</div>
+            <div class="mp-status" style="color:var(--muted)">API</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 4. Price & Rule Automation -->
-    <div class="feat-full-block alt" id="pricing">
-      <div class="reveal d2">
+    <!-- 4. Price Automation -->
+    <div class="feat-block flip" id="pricing">
+      <div class="feat-content reveal d2">
         <span class="feat-num">04 — Price & Rule Automation</span>
         <h2>Dynamic pricing that<br><em>protects your margin.</em></h2>
-        <p class="body">Define pricing logic once — by channel, category, cost basis, or competitor signal — and SpikeList enforces it across every SKU in real time. Margin floors are absolute. Promotional windows auto-revert. Price changes are traceable to the rule that triggered them.</p>
-        <ul class="feat-list" style="margin-top:20px">
-          <li>Rules-based pricing by channel, category, supplier, or individual SKU</li>
-          <li>Margin floor enforcement — never sell below cost, ever</li>
+        <p class="body">Define pricing logic once — by channel, category, cost basis, or competitor signal — and SpikeList enforces it across every SKU in real time. No spreadsheets. No manual updates. No margin surprises.</p>
+        <ul class="check-list">
+          <li>Rule-based pricing by channel, category, supplier, or individual SKU</li>
+          <li>Margin floor enforcement to prevent below-cost sales absolutely</li>
           <li>Competitor price monitoring with configurable repricing triggers</li>
           <li>Scheduled promotional pricing with automatic rollback on end date</li>
-          <li>Bulk price override tools for liquidation events</li>
-          <li>Full audit trail — every price change, with the rule that triggered it</li>
+          <li>Bulk price override tools for flash sales or liquidation events</li>
+          <li>Full price change audit log — every change, with the rule that triggered it</li>
         </ul>
       </div>
-      <div class="feat-full-viz reveal">
-        <div class="viz-head">Active Pricing Rules</div>
-        <div class="price-rules">
+      <div class="feat-viz reveal">
+        <div class="fv-title">Active Pricing Rules</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
           <div class="price-rule">
-            <span class="rule-icon">🛡️</span>
-            <div class="rule-content">
-              <div class="rule-name">Global Margin Floor</div>
-              <div class="rule-desc">Min 18% gross margin — all channels, all SKUs</div>
+            <span class="pr-icon">🛡️</span>
+            <div class="pr-body">
+              <div class="pr-name">Global Margin Floor</div>
+              <div class="pr-desc">Min 18% gross margin on all channels</div>
             </div>
-            <span class="rule-state on">ON</span>
+            <span class="pr-badge on">Active</span>
           </div>
           <div class="price-rule">
-            <span class="rule-icon">📉</span>
-            <div class="rule-content">
-              <div class="rule-name">Competitor Match — Amazon US</div>
-              <div class="rule-desc">Match lowest eligible seller ±5%, above floor</div>
+            <span class="pr-icon">📉</span>
+            <div class="pr-body">
+              <div class="pr-name">Amazon Competitor Match</div>
+              <div class="pr-desc">Match lowest eligible seller ±5%</div>
             </div>
-            <span class="rule-state on">ON</span>
+            <span class="pr-badge on">Active</span>
           </div>
           <div class="price-rule">
-            <span class="rule-icon">🏷️</span>
-            <div class="rule-content">
-              <div class="rule-name">Weekend Flash — Electronics</div>
-              <div class="rule-desc">-12% Fri 6pm → Mon 9am, auto-revert</div>
+            <span class="pr-icon">🏷️</span>
+            <div class="pr-body">
+              <div class="pr-name">Weekend Flash — Electronics</div>
+              <div class="pr-desc">-12% Fri 6pm → Mon 9am, auto-revert</div>
             </div>
-            <span class="rule-state off">PAUSED</span>
+            <span class="pr-badge off">Scheduled</span>
           </div>
           <div class="price-rule">
-            <span class="rule-icon">📦</span>
-            <div class="rule-content">
-              <div class="rule-name">Overstock Clearance</div>
-              <div class="rule-desc">-20% when on-hand &gt; 180-day supply</div>
+            <span class="pr-icon">📦</span>
+            <div class="pr-body">
+              <div class="pr-name">Overstock Clearance</div>
+              <div class="pr-desc">-20% when on-hand &gt; 180-day sell-through</div>
             </div>
-            <span class="rule-state on">ON</span>
+            <span class="pr-badge on">Active</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 5. Vendor / Supplier Integrations -->
-    <div class="feat-full-block" id="vendors">
-      <div class="reveal">
+    <!-- 5. Vendor Integrations -->
+    <div class="feat-block" id="vendors">
+      <div class="feat-content reveal">
         <span class="feat-num">05 — Vendor & Supplier Integrations</span>
         <h2>Onboard any supplier.<br><em>In hours, not weeks.</em></h2>
-        <p class="body">SpikeList is built around how suppliers actually work — not how you wish they would. Whether they send an EDI 850 or a messy SFTP CSV drop, the platform handles the translation without custom dev work every time you add a new partner.</p>
-        <ul class="feat-list" style="margin-top:20px">
+        <p class="body">SpikeList is built around how suppliers actually work — not how you wish they would. Whether they send an EDI 850 or a messy CSV over FTP, the platform handles the translation without custom development.</p>
+        <ul class="check-list">
           <li>EDI integration: 850, 855, 856, 810 — direct or via VAN (TrueCommerce, SPS)</li>
           <li>Flat file connectors: CSV, Excel, XML, JSON over FTP, SFTP, or S3</li>
-          <li>REST API integration with OAuth 2.0, API key, and webhook push</li>
-          <li>Supplier self-service portal for catalog submission and updates</li>
-          <li>Automated field mapping with schema detection</li>
-          <li>Supplier data quality scoring and performance SLA reporting</li>
+          <li>REST API integration with OAuth 2.0, API key, and webhook support</li>
+          <li>Supplier onboarding portal — self-serve catalog submission and update management</li>
+          <li>Automated field mapping with machine-assisted schema detection</li>
+          <li>Data quality scoring and supplier-level SLA reporting</li>
         </ul>
       </div>
-      <div class="feat-full-viz reveal d2">
-        <div class="viz-head">Supplier Connectivity Overview</div>
+      <div class="feat-viz reveal d2">
+        <div class="fv-title">Supplier Connection Types</div>
         <div class="source-bars">
-          <div class="src-item">
-            <div class="src-meta">
-              <span class="src-name">🔌 EDI / VAN Partners</span>
-              <span class="src-count">12 suppliers</span>
-            </div>
-            <div class="src-bar"><div class="src-bar-fill r" data-width="80%" style="width:0%"></div></div>
+          <div class="sb-item">
+            <div class="sb-label"><span>🔌 EDI / VAN Partners</span><span>12 suppliers</span></div>
+            <div class="bar-track"><div class="bar-fill red" style="width:80%"></div></div>
           </div>
-          <div class="src-item">
-            <div class="src-meta">
-              <span class="src-name">📂 FTP / SFTP Drops</span>
-              <span class="src-count">8 suppliers</span>
-            </div>
-            <div class="src-bar"><div class="src-bar-fill b" data-width="58%" style="width:0%"></div></div>
+          <div class="sb-item">
+            <div class="sb-label"><span>📂 FTP / SFTP Drops</span><span>8 suppliers</span></div>
+            <div class="bar-track"><div class="bar-fill blue" style="width:60%"></div></div>
           </div>
-          <div class="src-item">
-            <div class="src-meta">
-              <span class="src-name">⚡ REST API Direct</span>
-              <span class="src-count">6 suppliers</span>
-            </div>
-            <div class="src-bar"><div class="src-bar-fill g" data-width="44%" style="width:0%"></div></div>
+          <div class="sb-item">
+            <div class="sb-label"><span>⚡ REST API Direct</span><span>6 suppliers</span></div>
+            <div class="bar-track"><div class="bar-fill green" style="width:45%"></div></div>
           </div>
-          <div class="src-item">
-            <div class="src-meta">
-              <span class="src-name">🌐 Supplier Portal</span>
-              <span class="src-count">4 suppliers</span>
-            </div>
-            <div class="src-bar"><div class="src-bar-fill a" data-width="28%" style="width:0%"></div></div>
+          <div class="sb-item">
+            <div class="sb-label"><span>🌐 Supplier Portal</span><span>4 suppliers</span></div>
+            <div class="bar-track"><div class="bar-fill amber" style="width:28%"></div></div>
           </div>
         </div>
-        <div style="margin-top:20px;background:var(--blue-dim);border:1px solid rgba(47,180,255,0.2);border-radius:var(--r);padding:11px 14px">
-          <span style="font-family:var(--mono);font-size:10px;color:var(--blue);letter-spacing:.06em">30 suppliers connected · 46,582 total SKUs · avg onboard: 4.2 days</span>
+        <div style="margin-top:20px;background:var(--blue-pale);border:1px solid rgba(47,180,255,.25);border-radius:8px;padding:11px 14px">
+          <span style="font-size:12px;color:var(--blue-mid);font-weight:600">30 suppliers connected — 46,582 total SKUs — avg onboard time: 4.2 days</span>
         </div>
       </div>
     </div>
 
     <!-- 6. Workflow Automation -->
-    <div class="feat-full-block alt" id="workflow">
-      <div class="reveal d2">
+    <div class="feat-block flip" id="workflow">
+      <div class="feat-content reveal d2">
         <span class="feat-num">06 — Workflow Automation</span>
         <h2>Intelligent pipelines.<br><em>No engineering required.</em></h2>
-        <p class="body">Use SpikeList's workflow builder to encode the decisions your team makes every day — from order routing to data enrichment to listing suppression — and let them run automatically, at scale, without touching a spreadsheet or filing a Jira ticket.</p>
-        <ul class="feat-list" style="margin-top:20px">
+        <p class="body">Use SpikeList's workflow builder to encode the decisions your team makes every day — from order routing to data enrichment to listing suppression — and let them run automatically, at scale.</p>
+        <ul class="check-list">
           <li>Visual drag-and-drop workflow builder with 50+ pre-built action blocks</li>
           <li>Conditional branching, parallel paths, and wait-for-event triggers</li>
-          <li>Order routing rules based on geography, margin, inventory, and SLA</li>
+          <li>Order routing rules based on geography, margin, inventory location, and SLA</li>
           <li>Data enrichment triggers on new product intake or catalog change events</li>
           <li>Automated notifications via email, Slack, or webhook on any condition</li>
           <li>Full execution history with retry logic and failure alerting</li>
         </ul>
       </div>
-      <div class="feat-full-viz reveal">
-        <div class="viz-head">Order Routing Workflow</div>
-        <div class="wf-steps">
-          <div class="wf-step">
-            <div class="wf-step-num">1</div>
-            <div class="wf-step-content">
+      <div class="feat-viz reveal">
+        <div class="fv-title">Order Routing Workflow</div>
+        <div class="wf-list">
+          <div class="wf-item">
+            <div class="wf-sn">1</div>
+            <div class="wf-sc">
               <h5>Order Received</h5>
-              <p>Trigger on new order from any connected channel</p>
+              <p>Triggered on new order event from any connected channel</p>
             </div>
           </div>
-          <div class="wf-step">
-            <div class="wf-step-num">2</div>
-            <div class="wf-step-content">
+          <div class="wf-item">
+            <div class="wf-sn">2</div>
+            <div class="wf-sc">
               <h5>Check Inventory Availability</h5>
               <p>Query all warehouse and dropship sources for stock and lead time</p>
             </div>
           </div>
-          <div class="wf-step">
-            <div class="wf-step-num">3</div>
-            <div class="wf-step-content">
+          <div class="wf-item">
+            <div class="wf-sn">3</div>
+            <div class="wf-sc">
               <h5>Apply Routing Rules</h5>
               <p>Evaluate by geo proximity, margin contribution, carrier SLA</p>
             </div>
           </div>
-          <div class="wf-step">
-            <div class="wf-step-num">4</div>
-            <div class="wf-step-content">
+          <div class="wf-item">
+            <div class="wf-sn">4</div>
+            <div class="wf-sc">
               <h5>Route & Confirm</h5>
-              <p>Send to optimal fulfillment partner, update tracking, notify customer</p>
+              <p>Send to best-fit fulfillment partner, update tracking, notify customer</p>
             </div>
           </div>
         </div>
@@ -391,52 +358,45 @@
   </div>
 </div>
 
-<!-- CTA -->
-<section class="cta-section" style="padding:100px 0">
-  <div class="hero-glow-1" style="opacity:.5" aria-hidden="true"></div>
-  <div class="container" style="position:relative;z-index:1">
+<!-- ── CTA ── -->
+<section class="cta-banner" style="background:var(--surface-2)">
+  <div class="container">
     <div class="cta-inner reveal">
-      <span class="mono-label red" style="display:block;margin-bottom:20px">See It Live</span>
-      <h2 class="display-lg">Every feature working together,<br><em>against your actual catalog.</em></h2>
-      <p class="body-lg" style="margin-top:14px">Book a 30-minute demo and we'll configure a live walkthrough around your specific supplier setup and marketplace mix.</p>
-      <div class="cta-actions" style="margin-top:36px">
-        <a href="contact.html#demo" class="btn btn-red">
-          Book a Demo
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="contact.html" class="btn btn-outline">Talk to Sales →</a>
+      <p class="overline" style="margin-bottom:14px">See It Live</p>
+      <h2 class="h-lg">Every feature working together,<br><em>in your actual catalog.</em></h2>
+      <p class="body-lg">Book a 30-minute demo and we'll configure a live walkthrough around your specific supplier setup and marketplace mix.</p>
+      <div class="cta-actions">
+        <a href="contact.html#demo" class="btn btn-red btn-lg">Book a Demo <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="contact.html" class="btn btn-ghost btn-lg">Talk to Sales</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ── FOOTER ── -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo">
-          <div class="logo-mark"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2l6 6-6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          SpikeList
-        </div>
+        <span class="footer-logo-text">Spike<span>List</span></span>
         <p class="body-sm">Catalog automation and product feed management for eCommerce businesses that operate at scale.</p>
       </div>
       <div class="footer-col">
-        <h4>Features</h4>
+        <h4>Platform</h4>
         <ul>
-          <li><a href="#catalog">Catalog Aggregation</a></li>
-          <li><a href="#inventory">Inventory Sync</a></li>
-          <li><a href="#feeds">Feed Automation</a></li>
-          <li><a href="#pricing">Price Automation</a></li>
-          <li><a href="#workflow">Workflow Automation</a></li>
+          <li><a href="features.html#catalog">Catalog Aggregation</a></li>
+          <li><a href="features.html#inventory">Inventory Sync</a></li>
+          <li><a href="features.html#feeds">Feed Publishing</a></li>
+          <li><a href="features.html#pricing">Price Automation</a></li>
+          <li><a href="features.html#workflow">Workflow Automation</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#mission">Mission</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html#demo">Request Demo</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -449,11 +409,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2024 SpikeList Technologies. All rights reserved.</span>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </div>
+      <span>© 2024 SpikeList. All rights reserved.</span>
+      <div style="display:flex;gap:20px"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
     </div>
   </div>
 </footer>

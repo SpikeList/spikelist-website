@@ -1,78 +1,53 @@
-/* SpikeList – script.js */
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
 
-// ── Nav stuck state
-const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('stuck', window.scrollY > 10);
-}, { passive: true });
-
-// ── Mobile drawer
-const hamburger = document.querySelector('.hamburger');
-const drawer = document.querySelector('.mobile-drawer');
-if (hamburger && drawer) {
-  hamburger.addEventListener('click', () => {
-    const open = drawer.classList.toggle('open');
-    hamburger.textContent = open ? '✕' : '☰';
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  drawer.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      drawer.classList.remove('open');
-      hamburger.textContent = '☰';
-    });
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
   });
 }
 
-// ── Active nav link
-const page = location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav-links a, .mobile-drawer a').forEach(a => {
-  if (a.getAttribute('href') === page) a.classList.add('active');
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks && navLinks.classList.remove('open');
+  });
 });
 
-// ── Scroll reveal
-const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('in');
-      revealObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+// Contact form submit handler (static — no backend)
+function handleSubmit() {
+  const email = document.getElementById('email');
+  const firstName = document.getElementById('firstName');
 
-document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  if (!email || !email.value.includes('@')) {
+    alert('Please enter a valid work email address.');
+    return;
+  }
 
-// ── Contact form UX (static – no backend)
-const form = document.querySelector('#contactForm');
-if (form) {
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const orig = btn.textContent;
-    btn.textContent = 'Message sent ✓';
-    btn.style.background = '#16A34A';
+  const name = firstName ? firstName.value : '';
+  const btn = document.querySelector('button[onclick="handleSubmit()"]');
+  if (btn) {
+    btn.textContent = '✓ Request Sent — We\'ll be in touch!';
+    btn.style.background = '#16a34a';
+    btn.style.boxShadow = '0 2px 8px rgba(22,163,74,0.25)';
     btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = orig;
-      btn.style.background = '';
-      btn.disabled = false;
-      form.reset();
-    }, 4000);
-  });
+  }
 }
 
-// ── Animated bar fills on scroll
-const barObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.querySelectorAll('.bar-fill, .ch-bar').forEach(bar => {
-        bar.style.transition = 'width 1s cubic-bezier(0.4,0,0.2,1)';
-        const w = bar.style.width;
-        bar.style.width = '0';
-        requestAnimationFrame(() => requestAnimationFrame(() => { bar.style.width = w; }));
-      });
-      barObs.unobserve(e.target);
+// Scroll-reveal for feature cards
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
     }
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.1 });
 
-document.querySelectorAll('.feat-viz, .visual-panel').forEach(el => barObs.observe(el));
+document.querySelectorAll('.feature-card, .value-card, .step, .val-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+  observer.observe(el);
+});

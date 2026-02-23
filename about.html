@@ -3,193 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About SpikeList — Our mission to simplify complex eCommerce operations through automation and become the infrastructure layer for catalog-driven commerce.">
+  <meta name="description" content="About SpikeList — Our mission is to simplify complex eCommerce operations through automation. The infrastructure layer for catalog-driven commerce.">
   <title>About — SpikeList</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF0606'/><text x='16' y='22' text-anchor='middle' font-size='18' font-weight='700' fill='white' font-family='system-ui'>S</text></svg>">
 </head>
 <body>
 
-<!-- ── NAV ── -->
-<nav class="nav stuck" id="mainNav">
+<!-- NAV -->
+<nav>
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo">
-      <div class="logo-icon">
-        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h12M9 3l6 6-6 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <span class="logo-wordmark">Spike<span>List</span></span>
+    <a href="index.html" class="logo">
+      <img src="SpikeList_logo_design_in_red_and_blue.png" alt="SpikeList" height="100" style="display:block;">
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="features.html">Features</a></li>
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="nav-actions">
-      <a href="contact.html" class="btn btn-ghost">Talk to Sales</a>
-      <a href="contact.html#demo" class="btn btn-red">Request Demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-secondary btn-sm">Request Demo</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
     </div>
-    <button class="hamburger" aria-label="Open menu">☰</button>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
   </div>
 </nav>
-<div class="mobile-drawer">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="features.html">Features</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <a href="contact.html#demo" class="btn btn-red btn-lg">Request Demo</a>
-</div>
 
-<!-- ── PAGE HERO ── -->
-<section class="page-hero">
+<!-- PAGE HEADER -->
+<section class="page-header about-hero">
+  <div class="container text-center">
+    <div class="label">Our Story</div>
+    <h1 class="section-heading" style="margin:0 auto 16px;max-width:640px;">We're building the infrastructure for catalog-driven commerce</h1>
+    <p class="section-sub" style="margin:0 auto;">eCommerce operations are drowning in manual catalog work. We built SpikeList to eliminate it.</p>
+  </div>
+</section>
+
+<!-- MISSION / VISION -->
+<section class="section" style="background:white;">
   <div class="container">
-    <div class="page-hero-content reveal">
-      <p class="overline">About SpikeList</p>
-      <h1 class="display">We're building the<br><em>infrastructure layer</em><br>for catalog commerce.</h1>
-      <p class="body-lg">eCommerce operations have scaled far beyond what any team can manage manually. We started SpikeList to solve that — with automation that runs at the pace of modern commerce.</p>
+    <div class="mission-vision">
+      <div class="mv-card mission">
+        <div class="mv-icon">🎯</div>
+        <h3>Mission</h3>
+        <p>Simplify complex eCommerce operations through automation. Every hour your team spends on manual catalog work is an hour not spent on growth. We're here to reclaim that time.</p>
+      </div>
+      <div class="mv-card vision">
+        <div class="mv-icon">🚀</div>
+        <h3>Vision</h3>
+        <p style="color:var(--text-muted);">Become the infrastructure layer for catalog-driven commerce. When a product enters a supply chain, SpikeList ensures it's instantly discoverable, accurately priced, and perfectly presented — on every platform where buyers exist.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ── MISSION / VISION ── -->
-<section class="about-section" id="mission">
+<!-- PROBLEM WE'RE SOLVING -->
+<section class="section" style="background:var(--bg-soft);">
   <div class="container">
-    <div class="about-split">
-
-      <!-- Left: mission, vision, story -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
       <div>
-        <div class="about-card reveal">
-          <div class="ac-icon">🎯</div>
-          <h3>Our Mission</h3>
-          <p>To make complex eCommerce operations simple through automation. We believe that the engineering problems of catalog management — data normalization, inventory sync, feed publishing, price rules — should be solved once, at the platform level, so that every eCommerce team gets them for free.</p>
+        <div class="label">The Problem We Solve</div>
+        <h2 class="section-heading">Catalog operations were never designed to scale</h2>
+        <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin-bottom:24px;">Most eCommerce teams are stitching together spreadsheets, FTP uploads, and one-off integrations to manage product data across dozens of suppliers and channels. The result is errors, delays, and a team perpetually stuck in operational firefighting rather than strategic work.</p>
+        <p style="font-size:16px;color:var(--text-muted);line-height:1.7;">SpikeList was built by operators who lived this problem. We know exactly what breaks at 10,000 SKUs, at 50 suppliers, at 10 marketplace channels — and we built a system that handles it without friction.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="background:white;border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center;">
+          <div style="font-size:36px;font-family:'Sora',sans-serif;font-weight:800;color:var(--red);">73%</div>
+          <p style="font-size:13px;color:var(--text-muted);margin-top:6px;">of catalog errors stem from manual data entry</p>
         </div>
-        <div class="about-card reveal d1">
-          <div class="ac-icon">🔭</div>
-          <h3>Our Vision</h3>
-          <p>To become the infrastructure layer for catalog-driven commerce. The way Stripe removed payment complexity from engineering teams, SpikeList aims to remove catalog complexity from eCommerce operations teams — so they can focus on growing their business instead of maintaining data pipelines.</p>
+        <div style="background:white;border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center;">
+          <div style="font-size:36px;font-family:'Sora',sans-serif;font-weight:800;color:var(--blue);">14hrs</div>
+          <p style="font-size:13px;color:var(--text-muted);margin-top:6px;">avg weekly time wasted on manual feed management</p>
         </div>
-        <div class="about-card reveal d2">
-          <div class="ac-icon">🌏</div>
-          <h3>Where We're Based</h3>
-          <p>SpikeList is headquartered in Pune, India — a rapidly growing technology hub with deep engineering talent and proximity to the eCommerce ecosystems across South and Southeast Asia, while serving enterprise clients globally across North America and Europe.</p>
+        <div style="background:white;border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center;">
+          <div style="font-size:36px;font-family:'Sora',sans-serif;font-weight:800;color:var(--red);">3.2×</div>
+          <p style="font-size:13px;color:var(--text-muted);margin-top:6px;">faster time-to-market with automated feed publishing</p>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center;">
+          <div style="font-size:36px;font-family:'Sora',sans-serif;font-weight:800;color:var(--blue);">10M+</div>
+          <p style="font-size:13px;color:var(--text-muted);margin-top:6px;">SKUs managed on the SpikeList platform</p>
         </div>
       </div>
-
-      <!-- Right: problem, stats -->
-      <div>
-        <div class="problem-block reveal">
-          <h3>The Problem We Solve</h3>
-          <p>Most eCommerce businesses above a certain scale face the same operational ceiling: their catalog becomes too complex to manage. Supplier data arrives in a dozen formats, inventory changes faster than it can be propagated, and marketplace requirements differ enough to require near-constant manual intervention.</p>
-          <p style="margin-top:12px">The result is oversells, stale listings, missed channel opportunities, and operations teams spending their entire day on tasks that a well-designed platform should handle automatically. That's the problem SpikeList was built to eliminate.</p>
-        </div>
-
-        <div class="reveal d1">
-          <h3 class="h-md" style="margin-bottom:8px;color:var(--ink)">The scale of the problem</h3>
-          <p class="body-sm" style="margin-bottom:0">Numbers that motivated why SpikeList needed to exist.</p>
-          <div class="stats-row">
-            <div class="stat-box">
-              <div class="stat-num">68%</div>
-              <div class="stat-lbl">of eCommerce teams cite catalog management as their #1 operational bottleneck</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-num">4.2x</div>
-              <div class="stat-lbl">more SKUs managed per operator when catalog ops are automated</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-num">$2.4T</div>
-              <div class="stat-lbl">in global eCommerce GMV flows through multi-vendor catalog systems annually</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-card reveal d2" style="margin-top:14px">
-          <div class="ac-icon">🤝</div>
-          <h3>Who We Serve</h3>
-          <p>SpikeList is built for resellers, distributors, and online retailers managing catalogs of 5,000 SKUs or more — where manual catalog management has become a strategic liability. Our customers typically operate across multiple suppliers and multiple marketplace channels, and have outgrown their existing feed management tools.</p>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ── VALUES ── -->
-<section class="values-section">
+<!-- VALUES -->
+<section class="section" style="background:white;">
   <div class="container">
-    <div class="section-header reveal">
-      <p class="overline">Our Operating Principles</p>
-      <h2 class="h-lg">How we build,<br>and what we believe in.</h2>
+    <div class="text-center">
+      <div class="label blue">How We Work</div>
+      <h2 class="section-heading" style="margin:0 auto 16px;">Principles that shape everything we build</h2>
     </div>
     <div class="values-grid">
-      <div class="value-card reveal">
-        <div class="vc-icon">⚙️</div>
+      <div class="val-card">
+        <div class="val-icon">⚡</div>
         <h4>Automation Over Configuration</h4>
-        <p>We believe systems should be intelligent enough to figure things out. We build toward automation as a default, not a premium feature.</p>
+        <p>If it can be automated, it will be. We don't add settings where logic can work. Every manual step is a future failure point.</p>
       </div>
-      <div class="value-card reveal d1">
-        <div class="vc-icon">🔍</div>
-        <h4>Data Quality Is Non-Negotiable</h4>
-        <p>Bad data in means bad listings out. Every layer of SpikeList is built to catch and prevent data quality issues before they impact live channels.</p>
+      <div class="val-card">
+        <div class="val-icon">🧱</div>
+        <h4>Infrastructure Thinking</h4>
+        <p>We build for reliability, not novelty. Catalog data is operational infrastructure — it needs to work every time, at any scale.</p>
       </div>
-      <div class="value-card reveal d2">
-        <div class="vc-icon">📐</div>
-        <h4>Reliability as Infrastructure</h4>
-        <p>We hold ourselves to infrastructure-level uptime and reliability standards. Your catalog sync isn't a feature — it's a dependency.</p>
+      <div class="val-card">
+        <div class="val-icon">🔍</div>
+        <h4>Operator-Level Depth</h4>
+        <p>We understand the actual complexity of multi-vendor, multi-channel eCommerce. Our product reflects that depth, not a simplified version of it.</p>
       </div>
-      <div class="value-card reveal d3">
-        <div class="vc-icon">🌱</div>
-        <h4>Built to Scale With You</h4>
-        <p>The platform that handles 10,000 SKUs should handle 10 million without re-architecting. We build for the catalog you'll have, not just the one you have today.</p>
+      <div class="val-card">
+        <div class="val-icon">📐</div>
+        <h4>Precision Over Feature Velocity</h4>
+        <p>We'd rather ship one thing that works perfectly than five things that work most of the time. Quality of execution over quantity of releases.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🌐</div>
+        <h4>Built for Global Commerce</h4>
+        <p>Multi-currency, multi-language, multi-region — the eCommerce world is global. SpikeList is built to operate across borders without friction.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🤝</div>
+        <h4>Partnership with Our Customers</h4>
+        <p>Our customers aren't users — they're operations partners. Their catalog complexity shaped our product, and their success is our roadmap.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── POSITIONING ── -->
-<section style="padding:88px 0;background:var(--surface)">
+<!-- TEAM SECTION -->
+<section class="section" style="background:var(--bg-soft);">
+  <div class="container text-center">
+    <div class="label">The Team</div>
+    <h2 class="section-heading" style="margin:0 auto 16px;">Built by operators, for operators</h2>
+    <p class="section-sub" style="margin:0 auto 48px;">SpikeList was founded in Pune, India by a team with deep roots in eCommerce operations, supply chain technology, and B2B SaaS. We've lived the catalog problem firsthand — and we're building the platform we wished existed.</p>
+
+    <div style="background:var(--text);color:white;border-radius:var(--radius-lg);padding:48px;max-width:680px;margin:0 auto;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(255,6,6,0.15),transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(47,180,255,0.12),transparent 60%);pointer-events:none;"></div>
+      <div style="position:relative;">
+        <p style="font-size:19px;line-height:1.7;color:rgba(255,255,255,0.85);font-style:italic;margin-bottom:24px;">"The eCommerce catalog problem is bigger than most people realize. We're not building a tool — we're building infrastructure. The kind that should have existed five years ago."</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:14px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:'Sora',sans-serif;">S</div>
+          <div style="text-align:left;">
+            <strong style="display:block;font-size:15px;">SpikeList Founding Team</strong>
+            <span style="font-size:13px;color:rgba(255,255,255,0.5);">Pune, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
   <div class="container">
-    <div style="max-width:800px;margin:0 auto;text-align:center">
-      <p class="overline reveal" style="margin-bottom:16px">Investor Context</p>
-      <h2 class="h-lg reveal" style="margin-bottom:18px">We're building at the intersection of<br><em>eCommerce infrastructure and automation.</em></h2>
-      <p class="body-lg reveal d1" style="max-width:660px;margin:0 auto 24px">
-        The eCommerce middleware space is growing rapidly as multi-vendor and multi-channel commerce becomes the default operating model. Legacy tools built for simpler operations cannot scale to meet today's catalog complexity. SpikeList is designed from first principles for this new environment — API-first, automation-native, and architected for the data volumes that modern eCommerce demands.
-      </p>
-      <p class="body reveal d2" style="max-width:620px;margin:0 auto 40px">
-        We compete on depth of automation, data quality intelligence, and the breadth of supplier and marketplace integrations — categories where existing point solutions have meaningful gaps. Our goal is to be the platform that enterprise eCommerce teams rely on the way engineers rely on infrastructure providers: without thinking about it, because it just works.
-      </p>
-      <div class="reveal d3">
-        <a href="contact.html" class="btn btn-red btn-lg">Get in Touch <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      </div>
+    <h2>We'd love to show you what we've built</h2>
+    <p>Book a 30-minute demo with our team and see SpikeList working with your catalog operation.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-white btn-lg">Request a Demo →</a>
+      <a href="features.html" class="btn btn-ghost btn-lg">Explore Features</a>
     </div>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
-<footer class="footer">
+<!-- FOOTER -->
+<footer>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="footer-logo-text">Spike<span>List</span></span>
-        <p class="body-sm">Catalog automation and product feed management for eCommerce businesses that operate at scale.</p>
+        <a href="index.html" class="logo">
+          <img src="SpikeList_logo_design_in_red_and_blue.png" alt="SpikeList" height="32" style="display:block;">
+        </a>
+        <p>Catalog automation and feed management for eCommerce businesses operating at scale.</p>
       </div>
       <div class="footer-col">
         <h4>Platform</h4>
         <ul>
           <li><a href="features.html">Features</a></li>
-          <li><a href="features.html#catalog">Catalog Aggregation</a></li>
-          <li><a href="features.html#inventory">Inventory Sync</a></li>
+          <li><a href="features.html#catalog">Catalog Engine</a></li>
           <li><a href="features.html#pricing">Price Automation</a></li>
+          <li><a href="features.html#marketplace">Marketplace Feeds</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="about.html#mission">Mission</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html#demo">Request Demo</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -197,13 +200,14 @@
         <ul>
           <li><a href="mailto:info@spikelist.com">info@spikelist.com</a></li>
           <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Pune, India</a></li>
+          <li><a href="#">Twitter / X</a></li>
+          <li><span>Pune, India</span></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2024 SpikeList. All rights reserved.</span>
-      <div style="display:flex;gap:20px"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+      <span>Built for eCommerce operations at scale.</span>
     </div>
   </div>
 </footer>

@@ -3,7 +3,7 @@ const navHTML = `
 <nav>
   <div class="container nav-inner">
     <a href="index.html" class="logo">
-      <img src="SpikeList_logo.png" alt="SpikeList" height="36" style="display:block;">
+      <img src="SpikeList_logo.png" alt="SpikeList" height="50" style="display:block;">
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>

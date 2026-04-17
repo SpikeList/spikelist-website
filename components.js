@@ -29,7 +29,7 @@ const footerHTML = `
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">
-          <img src="SpikeList_logo.png" alt="SpikeList" height="32" style="display:block;">
+          <img src="SpikeList_logo.png" alt="SpikeList" height="50" style="display:block;">
         </a>
         <p>Catalog automation and feed management for eCommerce businesses operating at scale. Connect vendors, sync inventory, publish everywhere.</p>
       </div>
